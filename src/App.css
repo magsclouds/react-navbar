@@ -1,0 +1,52 @@
+/* Elements */
+
+li {
+    padding: 1em 0;
+}
+
+button {
+    font-size: 2rem;
+    margin-right:1em;
+    color: rgb(255, 255, 255);
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    float: right;
+}
+
+/* Class */
+
+.navBar {
+    width:100%;
+    background-color: #111;
+    color: white;
+    padding: 0.5em;
+}
+
+.links {
+    height: 0;
+    overflow: hidden;
+    list-style-type: none;
+    font-weight: bold;
+}
+
+.show-nav {
+    height: 50%
+}
+
+/* Media screen size */
+
+@media screen and (min-width: 768px) {
+
+      button {
+        display: none;
+      }
+      .links {
+        height: auto;
+        display: flex;
+      }
+      li {
+        padding: 0 1em;
+      }
+}
