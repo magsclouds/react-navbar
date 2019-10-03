@@ -1,6 +1,7 @@
 
 import React, { Component } from 'react';
-import { IoIosMenu } from 'react-icons/io';
+import { FiMenu } from 'react-icons/fi';
+import { GiHemp } from "react-icons/gi";
 import './App.css';
 
 export default class App extends Component {
@@ -15,7 +16,10 @@ export default class App extends Component {
 
   render() {
 
-    const li = [
+    const li = [    {
+                      link: "/",
+                      text: <GiHemp/>
+                    }, 
                     {
                       link: "/",
                       text:"HOME"
@@ -34,7 +38,7 @@ export default class App extends Component {
                     },
                     {
                       link: "/test/",
-                      text: "test"
+                      text: "test, test, test"
                     }
     ];
 
@@ -42,7 +46,7 @@ export default class App extends Component {
         <>
             <div className="navBar">
                   <button onClick = {this.Toggle}>
-                      <IoIosMenu/>
+                      <FiMenu/>
                   </button>
                   <ul className = {this.state.toggle ? "links show-nav" : "links"}>
                       {
