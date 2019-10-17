@@ -1,7 +1,8 @@
 
 import React, { Component } from 'react';
-import { FiMenu } from 'react-icons/fi';
-import { GiHemp } from "react-icons/gi";
+import        { FiMenu } from 'react-icons/fi';
+import        { GiHemp } from "react-icons/gi";
+
 import './App.css';
 
 export default class App extends Component {
@@ -36,25 +37,21 @@ export default class App extends Component {
                       link: "/contact/",
                       text: "CONTACT"
                     },
-                    {
-                      link: "/test/",
-                      text: "test, test, test"
-                    }
     ];
 
       return (
         <>
             <div className="navBar">
-                  <button onClick = {this.Toggle}>
+                <button onClick = {this.Toggle}>
                       <FiMenu/>
-                  </button>
-                  <ul className = {this.state.toggle ? "links show-nav" : "links"}>
-                      {
-                        li.map((objLink, i) => {
-                        return ( <li key={i}><a href={objLink.link}>{objLink.text}</a></li> )
-                        })
-                      }
-                  </ul>
+                </button>
+                <ul className = {this.state.toggle ? "links show-nav" : "links"}>
+                    {
+                      li.map((objLink, i) => {
+                      return ( <li key={i}><a href={objLink.link}>{objLink.text}</a></li> )
+                      })
+                    }
+                </ul>
             </div>
         </>
       );

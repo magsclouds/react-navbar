@@ -2,9 +2,11 @@
 li {
     padding: 0.5em;
     text-align: center;
-    /*display: flex;
-    flex-direction: column;
-    text-align: center;*/
+}
+
+ul {
+    padding: 0em;
+    margin: 0em;
 }
 
 button {
@@ -24,17 +26,15 @@ button {
     color: white;
     display: flex;
     flex-direction: column;
-    /*justify-content: center;*/
+    justify-content: center;
+    align-items: center;
 }
-
 
 .links {
     height: 0;
     overflow: hidden;
     list-style-type: none;
     font-size: 1em;
-    /*font-weight: bold;*/
-    
 }
 
 .show-nav {
@@ -51,7 +51,7 @@ button {
       .links {
         height: auto;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
         font-size: 0.8em;
       }
       .navBar {
@@ -63,4 +63,37 @@ button {
       li {
         padding: 0 1em;
       }
+}
+
+/*---------------------------- links styling -----------------------*/
+/* a:link, a:visited {
+    text-decoration: none;
+    color: rgb(255, 255, 255)
+}
+
+a:hover, a:active {
+    text-decoration: none;
+    color: rgb(6, 94, 43);
+} */
+
+
+a:link {
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+a:visited {
+  text-decoration: none;
+  color: rgb(255, 255, 255)
+}
+a:focus {
+  text-decoration: none;
+  color: rgb(6, 94, 43);
+}
+a:hover {
+  text-decoration: none;
+  color: rgb(6, 94, 43);
+}
+a:active {
+  text-decoration: none;
+  color: rgb(6, 94, 43);
 }
